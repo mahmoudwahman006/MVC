@@ -1,0 +1,375 @@
+*{
+	padding:0;
+	margin: 0;
+	text-decoration: none;
+	text-align: none;
+	font-family: "Poppins", sans-serif;
+}
+body{
+	background: #f0f0f0;
+	height: 120vh;
+
+}
+.main_cont{
+	width: 95%;
+	height: 100vh;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	display: flex;
+
+	
+}
+.left_cont{
+	height: 100vh;
+	width: 7%;
+	background: #f3c300;
+}
+.right_cont{
+
+	height: 100vh;
+	width:93% ;
+	background: #fff;
+	
+}
+.top_right{
+	background:#04091e;
+	width: 100%;
+	height: 8vh;
+	
+}
+.bottom_right{
+
+	height: 92.1vh;
+	background-color: #fff;
+	display: flex;
+}
+.room_img{
+	height: 100%;
+	width: 60vh;
+}
+.room_detils{
+	height: 87vh;
+	width: 60vh;
+	background:#fff;
+	padding: 15px;
+}
+
+.room_detils h1{
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	color: #2b3146;
+	margin-top: 25px;
+}
+.room_detils h3{
+	font-weight: 500;
+	margin-top: 10px;
+	color: #2b3146;
+	font-size: 20px;
+}
+.pernight{
+	font-size: 15px;
+	color: #f3c300;
+}
+.room_detils span{
+	color: #2b3146;
+	font-weight: 300;
+	line-height: 28px;
+	font-size: 18px;
+}
+
+
+.btn-conteiner {
+	display: flex;
+	justify-content: center;
+	--color-text: #04091e;
+	background: transparent;
+	--color-outline:  #f3c300;
+	--color-shadow: #00000080;
+	margin-left: 160vh;
+  }
+.panel{
+	
+	display:inline-block;
+	width:100%;
+	height:50px;
+	border-radius:10px;
+	padding-top:20px;
+	padding-left:10px;
+	box-shadow: 10px 10px 10px 10px #f0f0f0;
+	display:flex;
+	margin-top:20px;
+}
+.panel h2{
+	font-size:20px;
+	color:#04091e;
+}
+.btn-content {
+	display: flex;
+	align-items: center;
+	padding: 5px 30px;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	color: #fff;
+	background: var(--color-background);
+	transition: 1s;
+	border-radius: 100px;
+	box-shadow: 0 0 0.2em 0 var(--color-background);
+}
+  
+  .btn-content:hover, .btn-content:focus {
+	transition: 0.5s;
+	-webkit-animation: btn-content 1s;
+	animation: btn-content 1s;
+	outline: 0.1em solid transparent;
+	outline-offset: 0.2em;
+	box-shadow: 0 0 0.4em 0 var(--color-background);
+  }
+  
+  .btn-content .icon-arrow {
+	transition: 0.5s;
+	margin-right: 0px;
+	transform: scale(0.6);
+  }
+  
+  .btn-content:hover .icon-arrow {
+	transition: 0.5s;
+	margin-right: 25px;
+  }
+  
+  .icon-arrow {
+	width: 20px;
+	margin-left: 15px;
+	position: relative;
+	top: 6%;
+  }
+	
+  /* SVG */
+  #arrow-icon-one {
+	transition: 0.4s;
+	transform: translateX(-60%);
+  }
+  
+  #arrow-icon-two {
+	transition: 0.5s;
+	transform: translateX(-30%);
+  }
+  
+  .btn-content:hover #arrow-icon-three {
+	animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .btn-content:hover #arrow-icon-one {
+	transform: translateX(0%);
+	animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .btn-content:hover #arrow-icon-two {
+	transform: translateX(0%);
+	animation: color_anim 1s infinite 0.4s;
+  }
+  
+  /* SVG animations */
+  @keyframes color_anim {
+	0% {
+	  fill: white;
+	}
+  
+	50% {
+	  fill: var(--color-background);
+	}
+  
+	100% {
+	  fill: white;
+	}
+  }
+  
+  /* Button animations */
+  @-webkit-keyframes btn-content {
+	0% {
+	  outline: 0.2em solid var(--color-background);
+	  outline-offset: 0;
+	}
+  }
+  
+  @keyframes btn-content {
+	0% {
+	  outline: 0.2em solid var(--color-background);
+	  outline-offset: 0;
+	}
+  }
+
+
+
+
+
+
+
+.container{
+	width: 330px;
+	background: #fff;
+	text-align: center;
+	border-radius: 5px;
+	padding: 50px 35px 10px 35px;
+  }
+  .container header{
+	font-size: 35px;
+	font-weight: 600;
+	margin: 0 0 30px 0;
+  }
+  .container .form-outer{
+	width: 100%;
+	overflow: hidden;
+  }
+  .container .form-outer form{
+	display: flex;
+	width: 400%;
+  }
+  .form-outer form .page{
+	width: 25%;
+	transition: margin-left 0.3s ease-in-out;
+  }
+  .form-outer form .page .title{
+	text-align: left;
+	font-size: 25px;
+	font-weight: 500;
+  }
+  .form-outer form .page .field{
+	width: 330px;
+	height: 45px;
+	margin: 45px 0;
+	display: flex;
+	position: relative;
+  }
+  form .page .field .label{
+	position: absolute;
+	top: -30px;
+	font-weight: 500;
+  }
+  form .page .field input{
+	height: 100%;
+	width: 100%;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	padding-left: 15px;
+	font-size: 18px;
+  }
+  form .page .field select{
+	width: 100%;
+	padding-left: 10px;
+	font-size: 17px;
+	font-weight: 500;
+  }
+  form .page .field button{
+	width: 100%;
+	height: calc(100% + 5px);
+	border: none;
+	background: #f3c300;
+	margin-top: -20px;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: 0.5s ease;
+  }
+  form .page .field button:hover{
+	background: #2b3146;
+  }
+  form .page .btns button{
+	margin-top: -20px!important;
+  }
+  form .page .btns button.prev{
+	margin-right: 3px;
+	font-size: 17px;
+  }
+  form .page .btns button.next{
+	margin-left: 3px;
+  }
+  .container .progress-bar{
+	display: flex;
+	margin: 40px 0;
+	user-select: none;
+  }
+  .container .progress-bar .step{
+	text-align: center;
+	width: 100%;
+	position: relative;
+  }
+  .container .progress-bar .step p{
+	font-weight: 500;
+	font-size: 18px;
+	color: #000;
+	margin-bottom: 8px;
+  }
+  .progress-bar .step .bullet{
+	height: 25px;
+	width: 25px;
+	border: 2px solid #000;
+	display: inline-block;
+	border-radius: 50%;
+	position: relative;
+	transition: 0.2s;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 25px;
+  }
+  .progress-bar .step .bullet.active{
+	border-color: #2b3146;
+	background: #2b3146;
+  }
+  .progress-bar .step .bullet span{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  .progress-bar .step .bullet.active span{
+	display: none;
+  }
+  .progress-bar .step .bullet:before,
+  .progress-bar .step .bullet:after{
+	position: absolute;
+	content: '';
+	bottom: 11px;
+	right: -51px;
+	height: 3px;
+	width: 44px;
+	background: #262626;
+  }
+  .progress-bar .step .bullet.active:after{
+	background: #2b3146;
+	transform: scaleX(0);
+	transform-origin: left;
+	animation: animate 0.3s linear forwards;
+  }
+  @keyframes animate {
+	100%{
+	  transform: scaleX(1);
+	}
+  }
+  .progress-bar .step:last-child .bullet:before,
+  .progress-bar .step:last-child .bullet:after{
+	display: none;
+  }
+  .progress-bar .step p.active{
+	color: #2b3146;
+	transition: 0.2s linear;
+  }
+  .progress-bar .step .check{
+	position: absolute;
+	left: 50%;
+	top: 70%;
+	font-size: 15px;
+	transform: translate(-50%, -50%);
+	display: none;
+  }
+  .progress-bar .step .check.active{
+	display: block;
+	color: #fff;
+  }
+  

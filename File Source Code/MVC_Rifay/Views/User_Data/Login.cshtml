@@ -1,0 +1,119 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCI Hotel Login</title>
+
+    <!-- Required meta tags -->
+    <link rel="icon" href="~/image/favicon.png" type="image/png">
+    <title> Hotel</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/loginstyle.css" />
+</head>
+<body>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            <form asp-action="sigin" asp-controller="User_Data" method="post">
+    <div class="container">
+        <div class="card">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="h-100 d-flex justify-content-center align-items-center">
+                        <div class="py-4 px-3">
+                            <h4>Login</h4> <div class="row g-2 mt-1">
+                                <div class="col-md-6">
+                                    <div class="input-field">   </div>
+                                </div> <div class="col-md-6">
+                                    <div class="input-field">  </div>
+                                </div>
+                            </div> <div class="row mt-2">
+                                <div class="col-md-12">
+                                    <div class="input-field">
+
+                                        <input class="form-control" id="input3" name="user" required>
+                                        <label for="input3">User Name</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-2 mb-2">
+                                <div class="col-md-12">
+                                    <div class="input-field">
+                                        <input type="password" class="form-control" id="input4" required name="pass">
+                                        <label for="input4">Password</label>
+                                    </div>
+                                </div>
+                              
+                            </div> <span class="">Password must be atleast 8 characters</span>
+                            <div class="row mt-2">
+                                <div class="col-md-12">
+                                    <button class="btn btn-primary w-100 signup-button" type="submit">Log in</button>
+                                </div>
+                            </div>
+
+
+                            <div class="member mt-1">
+                                <span>Create Account</span> <a class="text-decoration-none" asp-controller="User_Data" asp-action="Signup">SignUp</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+</form>
+<div class="col-md-6">
+    <div class="right-side-content">
+        <div class="content d-flex flex-column">
+            
+            <div class="boxes">
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <span></span> <span></span> <span></span> <span></span> <span><img src="https://i.imgur.com/kWmyZvb.jpg"> </span> <span></span> <span></span> <span></span> <span> <img src="https://i.imgur.com/U0863iD.jpg"> </span> <span></span>
+        </div>
+    </div>
+</div> </div>
+                                                </div>
+<div class="parallelogram"> <span></span> <span></span> <span></span> </div>
+</div>
+</main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

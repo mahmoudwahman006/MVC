@@ -1,0 +1,112 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - Admin_system</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/adminCss/adminstyle.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/Admin_system.styles.css" asp-append-version="true" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+	<link rel="stylesheet" href="~/css/adminCss/bootstrap.min.css">
+	<link rel="stylesheet" href="~/css/plugins/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="~/css/plugins/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="~/css/adminCss/feathericon.min.css">
+	<link rel="stylesheet" href="~/css/plugins/morris/morris.css">
+	<link rel="stylesheet" type="text/css" href="~/css/adminCss/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" href="~/css/adminCss/style.css">
+</head>
+<body>
+
+	
+	<div class="header">
+		<div class="header-left">
+			<a href="index.html" class="logo"><span class="logoclass">FCI HOTEL</span> </a>
+
+		</div>
+		<a href="javascript:void(0);" id="toggle_btn"> <i class="fas fa-bars"></i> </a>
+		<a class="mobile_btn" id="mobile_btn"> <i class="fas fa-bars"></i> </a>
+		<ul class="nav user-menu">
+			<li class="nav-item dropdown noti-dropdown">
+			<li class="nav-item dropdown has-arrow">
+				
+				<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> <span class="user-img"><img src="~/image/admin.jpeg" alt="User Image" class="rounded-circle" width="31"></span> </a>
+				<div class="dropdown-menu">
+					<div class="user-header">
+						
+						<div class="avatar avatar-sm"> <img src="~/image/admin.jpeg" alt="User Image" class="avatar-img rounded-circle"> </div>
+						<div class="user-text">
+							<h6>@ViewBag.user</h6>
+							<p class="text-muted mb-0">Administrator</p>
+						</div>
+					</div> <a class="dropdown-item" asp-action="profile" asp-controller="Admin">My Profile</a> <a class="dropdown-item" href="/Admin/Logout">Logout</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-inner slimscroll">
+			<div id="sidebar-menu" class="sidebar-menu">
+				<ul>
+
+					<li class="list-divider"></li>
+					<li class="submenu">
+						<a href="#"><i class="fas fa-suitcase"></i> <span> Booking </span> <span class="menu-arrow"></span></a>
+						<ul class="submenu_class" style="display: none;">
+							<li><a asp-controller="Admin" asp-action="all_Booking"> All Booking </a></li>
+							<li><a  asp-controller="Admin" asp-action="edit_Booking"> Edit Booking </a></li>
+						
+						</ul>
+					</li>
+					<li class="submenu">
+						<a href="#"><i class="fas fa-user"></i> <span> Customers </span> <span class="menu-arrow"></span></a>
+						<ul class="submenu_class" style="display: none;">
+							<li><a asp-controller="Admin" asp-action="all_Customer"> All customers </a></li>
+							<li><a asp-controller="Admin" asp-action="edit_Customer"> Edit Customer </a></li>
+							
+						</ul>
+					</li>
+					<li class="submenu">
+						<a href="#"><i class="fas fa-key"></i> <span> Rooms </span> <span class="menu-arrow"></span></a>
+						<ul class="submenu_class" style="display: none;">
+							<li><a asp-controller="Admin" asp-action="all_Room">All Rooms </a></li>
+							<li><a asp-controller="Admin" asp-action="edit_Room"> Edit Rooms </a></li>
+							<li><a asp-controller="Admin" asp-action="add_Room"> Add Rooms </a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<main role="main" class="pb-3">
+			@RenderBody()
+		</main>
+	</div>
+
+	
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/admin/site.js" asp-append-version="true"></script>
+	<script src="~/js/admin/jquery-3.5.1.min.js"></script>
+	<script src="~/js/admin/popper.min.js"></script>
+	<script src="~/js/admin/bootstrap.min.js"></script>
+	<script src="~/js/admin/moment.min.js"></script>
+	<script src="~/js/admin/bootstrap-datetimepicker.min.js"></script>
+	<script src="~/js/admin/jquery.slimscroll.min.js"></script>
+	<script src="~/js/admin/raphael.min.js"></script>
+	<script src="~/js/admin/script.js"></script>
+	<script>
+		$(function () {
+			$('#datetimepicker3').datetimepicker({
+				format: 'LT'
+			});
+		});
+	</script>
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

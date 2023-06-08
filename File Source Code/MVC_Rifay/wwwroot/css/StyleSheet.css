@@ -1,0 +1,34 @@
+﻿
+.cont {
+    display: inline-block;
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: typing 5s steps(20, end) forwards, blinking .8s infinite;
+    font-size: 1.6rem;
+    font-weight:600;
+    width: 0;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blinking {
+    from {
+        border-color: transparent
+    }
+
+    to {
+        border-color: #f3c300;
+    }
+}
